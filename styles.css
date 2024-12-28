@@ -3,4 +3,100 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", serif;
+    outline: none; /* Serve para tira a linha do input */
+}
+
+body {
+    background-color: #8A51FC;
+}
+
+.logo {
+    width: 300px;
+    display: block; /* Para centralizar itens ao centro podemos usar essas três, display: block;  margin-left: auto;  margin-right: auto; */
+    margin: 20px auto;
+}
+
+/* Configurção da caixa a parte branca  */
+main {
+    width: 375px;
+    background: #F4F4F4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select, input {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none; /* Serve para tira a seta do input */
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+button {
+    background: #772FD3;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    height: 48px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8; /* Para quando passar o mousse */
+}
+button:active {
+    opacity: 0.6; /* Para quando mousse for clicado */
+}
+
+section {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+
+    /* Logo abaixo como colocar os itens um abaixo do outro e centralizar */
+    display: flex;     /* Por padrão coloca um do lado do outro*/
+    flex-direction: column;     /* Permite que a gente escolha qual posição queremos */
+    align-items: center;     /* Serve para alinha os itens */
+
+}
+
+.arrow-img {
+    margin: 15px 0;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; /* Serve para distanciar os itens */
+}
+
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+.currency-value, .currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
 }

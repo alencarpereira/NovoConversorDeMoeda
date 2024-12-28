@@ -14,7 +14,48 @@
 </head>
 
 <body>
+    <img class="logo" src="./assets/logo .gif" alt="logo-gif">
 
+    <main>
+        <label>
+            Converter <b>de</b>
+            <select>
+                <option>R$ Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Converter <b>para</b>
+            <select class="currency-select">       <!--class="currency-select"-->
+                <option value="dolar">US$ Dólar Americano</option>       <!--value="dolar"-->
+                <option value="euro">€ Euro</option>       <!--value="euro"-->
+            </select>
+        </label>
+
+        <label>
+            Valor
+            <input class="input-currency" placeholder="R$ 10.000,00"> <!--class="input-currency"-->
+        </label>
+
+        <button class="convert-button">Converter</button>   <!--class="convert-button"-->
+
+        <section>
+            <div class="currency-box">
+                <img src="./assets/Real.png" alt="logo-moeda-a-converter">
+                <p class="currency">Real</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>  <!--class="currency-value-to-convert-->
+            </div>
+
+            <img class="arrow-img"  src="./assets/arrow.png" alt="seta">
+
+            <div class="currency-box">
+                <img src="./assets/dolar.png" alt="logo-moeda-convertida">
+                <p class="currency">Dólar</p>
+                <p class="currency-value">US$ 0.0</p>
+            </div>
+        </section>
+    </main>
 </body>
+<script src="./script.js"></script>
 
 </html>
